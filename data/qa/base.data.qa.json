@@ -1,0 +1,74 @@
+{
+  "personal": {
+    "name": "Gyana Prakash Khandual",
+    "title": "Quality Assurance Engineer",
+    "age": "21 years old, In my peak age",
+    "location": "Bhubaneswar, Odisha, India"
+  },
+  "contact": {
+    "email": "gyanaprakashkhnadual@gmail.com",
+    "phone": "7606939833",
+    "whatsapp": "7847974893",
+    "github": "github.com/GyanaprakashKhandual"
+  },
+  "about": {
+    "description": "QA Automation Engineer with strong automation, API & performance testing skills, delivering scalable, high-quality software through continuous testing and team collaboration.",
+    "projectCount": "16+"
+  },
+  "skills": {
+    "Languages": ["C", "C++", "Java", "JavaScript", "TypeScript", "Python", "HTML"],
+    "Functional Testing Frameworks": ["Cypress", "Selenium", "Playwright", "Appium", "Puppeteer", "Espresso"],
+    "API Testing Frameworks": ["Postman", "Rest Assured", "PyTest", "Soap UI", "Karate DSL", "Newman"],
+    "Performance Testing Frameworks": ["Grafana K6", "Artillery", "Locust", "PyTest", "JMeter", "Gatling"],
+    "Database Testing Frameworks": ["DB Unit", "Liquibase", "FlyWay"],
+    "Security Testing Frameworks": ["N Map", "Burp Suite", "Fat Rat", "OWSAP ZAP", "Meterprter"],
+    "Custom and Util Framework": ["Cucumber", "Gherkin", "CI CD", "POM", "Extent", "Allure", "Env"],
+    "Tools and Technology": ["Jira", "ZOHO Workspace", "Confluence", "Google Workspace", "Trello", "Bug Zilla"]
+  },
+  "experience": [
+    {
+      "title": "Quality Assurance Analyst",
+      "company": "Avidus Interactive",
+      "responsibilities": [
+        "Develop and maintain automated test scripts using Selenium WebDriver and Java, ensuring reliable functional and regression testing.",
+        "Integrate automation into CI/CD (Jenkins, Git) and collaborate with teams to improve test coverage, early defect detection, and release quality."
+      ]
+    }
+  ],
+  "projects": {
+    "url": "https://code-with-leo.vercel.app",
+    "list": [
+      {
+        "name": "Resol Pro",
+        "tech": "Manual Testing • JMeter • Rest Assured • Google Workspace",
+        "features": [
+          "End To End testing of task management app with 15 time of regress"
+        ]
+      },
+      {
+        "name": "RR Crop",
+        "tech": "Selenium • Caffetest • Soap UI • ZOHO Workspace",
+        "features": [
+          "Automation testing on a employee management just with vibe coding"
+        ]
+      }
+    ]
+  },
+  "education": [
+    {
+      "degree": "Bachelor of Science - In Physics - Utkal University",
+      "duration": "Graduated: 2024 July"
+    },
+    {
+      "degree": "SDET Course - MASAI Institute",
+      "duration": "Graduated: 2025 January"
+    },
+    {
+      "degree": "Full Stack Web Development - Udemy",
+      "duration": "Completed: 2024"
+    }
+  ],
+  "philosophy": [
+    "I follow a simple cycle — work, fitness, and proper rest — keeping me consistent, reliable, and always performing at my best as a QA Automation Engineer."
+  ]
+}
