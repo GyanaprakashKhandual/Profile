@@ -1,0 +1,26 @@
+{
+  "applicant": {
+    "name": "Gyana Prakash Khandual",
+    "title": "Full Stack Web Developer"
+  },
+  "date": "February 03, 2026",
+  "recipient": {
+    "name": "Hiring Manager",
+    "title": "Human Resources Department",
+    "company": "Company Name",
+    "address": "Company Address, City, State"
+  },
+  "salutation": "Dear Hiring Manager,",
+  "body": [
+   "I am writing to express my strong interest in the Full Stack Web Developer position. As a passionate developer with expertise in building scalable web applications using modern technologies, I am excited to contribute to your team's success.",
+   "At Avidus Interactive, I developed 8+ scalable web applications using ReactJS, NextJS, Node.js, and MongoDB, improving performance by 40%. I implemented CI/CD pipelines reducing deployment time by 50% while maintaining 99% uptime.",
+    "Beyond technical skills, I excel in cross-functional Agile collaboration using Jira and Confluence. I have resolved 100+ production issues and mentored junior developers. My portfolio includes Resolution Pro, supporting 500+ concurrent users, and Caffetest, an automated testing framework saving 15+ developer hours weekly.",
+    "I am drawn to your organization's commitment to innovation and technology excellence. My technical expertise, problem-solving abilities, and passion for user-centric applications align perfectly with your team's goals, and I am eager to contribute meaningfully to your projects.",
+    "Thank you for considering my application. I would welcome the opportunity to discuss how my background, skills, and enthusiasm can contribute to your team's continued success. I look forward to the possibility of speaking with you soon."
+  ],
+  "closing": "Sincerely,",
+  "signature": {
+    "name": "Gyana Prakash Khandual",
+    "title": "Full Stack Web Developer"
+  }
+}
