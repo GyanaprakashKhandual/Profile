@@ -1,0 +1,104 @@
+{
+  "personal": {
+    "name": "Gyana Prakash Khandual",
+    "title": "Full Stack Web Developer",
+    "location": "Bhubaneswar, Odisha, India"
+  },
+  "contact": {
+    "email": "gyanaprakashkhnadual@gmail.com",
+    "website": "https://gyanprakash.vercel.app",
+    "phone": "7606939833",
+    "whatsapp": "7847974893",
+    "github": "github.com/GyanaprakashKhandual"
+  },
+  "about": {
+    "description": "Full Stack Web Developer building scalable web applications with modern technologies, clean code, and Agile methodologies.",
+    "projectCount": "16+"
+  },
+  "skills": {
+    "Languages": ["TypeScript", "HTML", "CSS"],
+    "Frontend Frameworks": ["ReactJS", "Context API", "Redux"],
+    "Backend Frameworks": ["Node.js", "ExpressJS", "REST API"],
+    "Database": ["MongoDB", "MySQL", "PostgreSQL"],
+    "UI Library": ["Material UI", "Primer Design", "Tailwind"],
+    "Animation and 3D Library": ["Framer Motion", "GSAP", "ThreeJS"],
+    "Deployment & DevOps": [
+      "Git",
+      "GitHub",
+      "AWS",
+      "Docker",
+      "CI/CD",
+      "Jenkins",
+      "Render"
+    ],
+    "Tools and Technology": ["Jira Workspace", "Postman", "VS Code"],
+    "Methodologies": ["Version Control", "Agile", "Scrum"],
+    "Soft Skills": [
+      "Problem Solving",
+      "Team Collaboration",
+      "Clear Communication",
+      "Adaptability"
+    ]
+  },
+  "experience": [
+    {
+      "title": "Full Stack Web Developer",
+      "company": "Avidus Interactive",
+      "duration": "2024 - Present",
+      "location": "Bhubaneswar, Odisha, India",
+      "responsibilities": [
+        "Developed 8+ scalable web applications using ReactJS, NextJS, Node.js, and MongoDB with 40% performance improvement.",
+        "Implemented RESTful APIs and CI/CD pipelines reducing deployment time by 50% and maintaining 99% uptime.",
+        "Collaborated in Agile teams using Jira, resolved 100+ production issues."
+      ]
+    }
+  ],
+  "projects": {
+    "list": [
+      {
+        "name": "Resolution Pro",
+        "tech": "ReactJS • ExpressJS • MongoDB • AWS • Node.js • REST API",
+        "features": [
+          "Built meeting scheduler supporting 500+ concurrent users with WebSocket.",
+          "Optimized MongoDB queries reducing execution time by 40% than before.",
+          "Deployed on AWS with CI/CD pipeline achieving 99.5% uptime."
+        ]
+      },
+      {
+        "name": "Caffetest",
+        "tech": "NextJS • Tailwind CSS • ExpressJS • MongoDB • VS Code Extension",
+        "features": [
+          "Auto lock bug and test case according to the automation test result",
+          "Integrated with most famous automation testing framework and VS Code",
+          "Visit https://caffetest.vercel.app to use the vibe AI bug tracker"
+        ]
+      }
+    ]
+  },
+  "education": [
+    {
+      "degree": "Bachelor of Computer Application",
+      "institution": "Utkal University",
+      "location": "Odisha, India",
+      "duration": "Graduated: July 2024",
+      "achievements": "Relevant coursework: Data Structures, Algorithms, Database Management, Web Technologies, Software Engineering"
+    },
+    {
+      "degree": "Full Stack Web Development Certification",
+      "institution": "MASAI Institute",
+      "location": "India",
+      "duration": "Graduated: January 2025",
+      "achievements": "Intensive 30+ weeks program covering MERN stack, System Design, DSA, and industry best practices with 1000+ hours of hands-on coding"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Full Stack Web Development",
+      "issuer": "MASAI Institute",
+      "year": "2025"
+    }
+  ],
+  "philosophy": [
+    "I maintain consistent high performance through a disciplined balance of focused work, fitness, and rest as a Full Stack Web Developer."
+  ]
+}
