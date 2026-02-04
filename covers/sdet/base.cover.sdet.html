@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SDET Cover Letter</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <link rel="stylesheet" href="../../theme/blue.theme.css">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: var(--gradient-bg);
+        padding: 40px 20px;
+        min-height: 100vh;
+      }
+
+      .container {
+        max-width: 210mm;
+        margin: 0 auto;
+        background: var(--color-white);
+        box-shadow: var(--shadow-main);
+        position: relative;
+      }
+
+      .download-btn {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: var(--color-primary);
+        color: var(--color-white);
+        border: none;
+        padding: 12px 24px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        transition: all 0.3s;
+        box-shadow: var(--shadow-btn);
+        z-index: 1000;
+      }
+
+      .download-btn:hover {
+        background: var(--color-primary-dark);
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-btn-hover);
+      }
+
+      #coverletter {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .header {
+        text-align: center;
+        padding: 30px 40px;
+        background: var(--gradient-primary);
+        color: var(--color-white);
+      }
+
+      .header h1 {
+        font-size: 32px;
+        margin-bottom: 8px;
+        font-weight: 700;
+      }
+
+      .header .title {
+        font-size: 18px;
+        opacity: 0.95;
+        font-weight: 500;
+      }
+      .content {
+        padding: 40px 60px;
+      }
+
+      .date-section {
+        margin-bottom: 10px;
+      }
+
+      .date {
+        font-size: 14px;
+        color: var(--color-text-secondary);
+        font-weight: 500;
+      }
+
+      .recipient-section {
+        margin-bottom: 35px;
+      }
+
+      .recipient-name {
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--color-text);
+        margin-bottom: 4px;
+      }
+
+      .recipient-title {
+        font-size: 14px;
+        color: var(--color-text-secondary);
+        margin-bottom: 4px;
+      }
+
+      .company-name {
+        font-size: 15px;
+        color: var(--color-primary);
+        font-weight: 600;
+        margin-bottom: 4px;
+      }
+
+      .company-address {
+        font-size: 14px;
+        color: var(--color-text-secondary);
+      }
+
+      .salutation {
+        font-size: 15px;
+        color: var(--color-text);
+        margin-bottom: 25px;
+        font-weight: 500;
+      }
+
+      .body-content {
+        margin-bottom: 30px;
+      }
+
+      .paragraph {
+        font-size: 14px;
+        line-height: 1.8;
+        color: var(--color-text);
+        margin-bottom: 20px;
+        text-align: justify;
+      }
+
+      .highlight {
+        color: var(--color-primary);
+        font-weight: 600;
+      }
+
+      .closing-section {
+        margin-top: 40px;
+      }
+
+      .closing {
+        font-size: 15px;
+        color: var(--color-text);
+      }
+
+      .signature-area {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .name {
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--color-text);
+      }
+
+      .signature-title {
+        font-size: 14px;
+        color: var(--color-text-secondary);
+      }
+
+      @media print {
+        body {
+          background: var(--color-white);
+          padding: 0;
+        }
+
+        .container {
+          box-shadow: none;
+          max-width: 100%;
+        }
+
+        .download-btn {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <button class="download-btn" onclick="downloadPDF()">
+      <svg viewBox="0 0 24 24">
+        <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
+      </svg>
+      Download PDF
+    </button>
+
+    <div class="container">
+      <div id="coverletter">
+        <div class="header">
+          <h1 id="applicant-name"></h1>
+          <div class="title" id="applicant-title"></div>
+          <div class="contact-line" id="contact-line"></div>
+        </div>
+
+        <div class="content">
+          <div class="date-section">
+            <div class="date" id="letter-date"></div>
+          </div>
+
+          <div class="recipient-section" id="recipient-section"></div>
+
+          <div class="salutation" id="salutation"></div>
+
+          <div class="body-content" id="body-content"></div>
+
+          <div class="closing-section">
+            <div class="closing" id="closing"></div>
+              <div class="name" id="signature-name"></div>
+              <div class="signature-title" id="signature-title"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      async function loadCoverLetterData() {
+        try {
+          const response = await fetch(
+            "../../data/developer/base.data.dev.cover.json",
+          );
+          const data = await response.json();
+
+          document.getElementById("applicant-name").textContent =
+            data.applicant.name;
+          document.getElementById("applicant-title").textContent =
+            data.applicant.title;
+
+          
+
+          document.getElementById("letter-date").textContent = data.date;
+
+          const recipientSection = document.getElementById("recipient-section");
+          recipientSection.innerHTML = `
+            <div class="recipient-name">${data.recipient.name}</div>
+            <div class="recipient-title">${data.recipient.title}</div>
+            <div class="company-name">${data.recipient.company}</div>
+            <div class="company-address">${data.recipient.address}</div>
+          `;
+
+          document.getElementById("salutation").textContent = data.salutation;
+
+          const bodyContent = document.getElementById("body-content");
+          bodyContent.innerHTML = data.body
+            .map((paragraph) => `<div class="paragraph">${paragraph}</div>`)
+            .join("");
+
+          document.getElementById("closing").textContent = data.closing;
+          document.getElementById("signature-name").textContent =
+            data.signature.name;
+          document.getElementById("signature-title").textContent =
+            data.signature.title;
+        } catch (error) {
+          console.error("Error loading cover letter data:", error);
+        }
+      }
+
+      window.addEventListener("DOMContentLoaded", loadCoverLetterData);
+
+      async function downloadPDF() {
+        const button = document.querySelector(".download-btn");
+        button.textContent = "Generating PDF...";
+        button.disabled = true;
+
+        try {
+          const { jsPDF } = window.jspdf;
+          const coverletter = document.getElementById("coverletter");
+
+          const canvas = await html2canvas(coverletter, {
+            scale: 2,
+            useCORS: true,
+            logging: false,
+            backgroundColor: "#ffffff",
+          });
+
+          const imgData = canvas.toDataURL("image/png");
+          const pdf = new jsPDF({
+            orientation: "portrait",
+            unit: "mm",
+            format: "a4",
+          });
+
+          const imgWidth = 210;
+          const imgHeight = (canvas.height * imgWidth) / canvas.width;
+
+          pdf.addImage(imgData, "PNG", 0, 0, imgWidth, imgHeight);
+          pdf.save("Gyanaprakash_Khandual_CoverLetter.pdf");
+
+          button.innerHTML = `
+          <svg viewBox="0 0 24 24">
+            <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+          </svg>
+          Download PDF
+        `;
+          button.disabled = false;
+        } catch (error) {
+          console.error("Error generating PDF:", error);
+          button.textContent = "Error - Try Again";
+          button.disabled = false;
+        }
+      }
+    </script>
+  </body>
+</html>
