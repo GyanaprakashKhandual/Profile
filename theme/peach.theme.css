@@ -1,0 +1,20 @@
+:root {
+  --color-primary: #fb923c;
+  --color-primary-dark: #f97316;
+  --color-text: #1c1917;
+  --color-text-secondary: #57534e;
+  --color-text-light: #a8a29e;
+  --color-bg-main: #ffffff;
+  --color-bg-secondary: #fff7ed;
+  --color-bg-tertiary: #ffedd5;
+  --color-border: #fed7aa;
+  --color-border-light: #ffedd5;
+  --color-border-blue: #fdba74;
+  --color-white: #ffffff;
+  --gradient-primary: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
+  --gradient-bg: linear-gradient(135deg, #ffffff 0%, #fff7ed 100%);
+  --gradient-card: linear-gradient(135deg, #ffffff 0%, #ffedd5 100%);
+  --shadow-main: 0 10px 40px rgba(251, 146, 60, 0.12);
+  --shadow-btn: 0 4px 12px rgba(251, 146, 60, 0.3);
+  --shadow-btn-hover: 0 6px 16px rgba(251, 146, 60, 0.4);
+}
