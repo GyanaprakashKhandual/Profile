@@ -1,8 +1,8 @@
 const puppeteer = require("puppeteer");
 
 (async () => {
-    const RESUME_URL = "http://127.0.0.1:5501/resumes/qas/index.html";
-    const OUTPUT_FILE = "QA.pdf";
+    const RESUME_URL = "http://127.0.0.1:5500/resumes/developer/base.resume.developer.html";
+    const OUTPUT_FILE = "Full_Stack_Web_Developer.pdf";
 
     console.log("RESUME PDF GENERATOR STARTED");
 

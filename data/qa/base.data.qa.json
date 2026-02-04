@@ -2,73 +2,82 @@
   "personal": {
     "name": "Gyana Prakash Khandual",
     "title": "Quality Assurance Engineer",
-    "age": "21 years old, In my peak age",
     "location": "Bhubaneswar, Odisha, India"
   },
   "contact": {
     "email": "gyanaprakashkhnadual@gmail.com",
+    "website": "https://gyanprakash.vercel.app",
     "phone": "7606939833",
     "whatsapp": "7847974893",
     "github": "github.com/GyanaprakashKhandual"
   },
   "about": {
-    "description": "QA Automation Engineer with strong automation, API & performance testing skills, delivering scalable, high-quality software through continuous testing and team collaboration.",
-    "projectCount": "16+"
+    "description": "Quality Assurance Engineer building scalable web applications with modern technologies, clean code, cross collaboration, and Agile methodologies."
   },
   "skills": {
-    "Languages": ["C", "C++", "Java", "JavaScript", "TypeScript", "Python", "HTML"],
-    "Functional Testing Frameworks": ["Cypress", "Selenium", "Playwright", "Appium", "Puppeteer", "Espresso"],
-    "API Testing Frameworks": ["Postman", "Rest Assured", "PyTest", "Soap UI", "Karate DSL", "Newman"],
-    "Performance Testing Frameworks": ["Grafana K6", "Artillery", "Locust", "PyTest", "JMeter", "Gatling"],
-    "Database Testing Frameworks": ["DB Unit", "Liquibase", "FlyWay"],
-    "Security Testing Frameworks": ["N Map", "Burp Suite", "Fat Rat", "OWSAP ZAP", "Meterprter"],
-    "Custom and Util Framework": ["Cucumber", "Gherkin", "CI CD", "POM", "Extent", "Allure", "Env"],
-    "Tools and Technology": ["Jira", "ZOHO Workspace", "Confluence", "Google Workspace", "Trello", "Bug Zilla"]
+    "Languages": ["TypeScript", "JavaScript", "Java", "GO"],
+    "UI Testing": ["Cypress", "Selenium", "Playwright"],
+    "API Testing": ["Postman", "Rest Assured", "Soap UI"],
+    "Database": ["MongoDB", "MySQL", "PostgreSQL"],
+    "Performance Testing": ["Grafana", "JMeter", "BlazeMeter"],
+    "Workflow & Integration": ["Page Object Model", "Cucumber", "Allure"],
+    "DevOps": ["Git", "GitHub", "AWS", "Docker", "CI/CD", "Jenkins", "Render"],
+    "Tools and Technology": ["Jira Workspace", "BurpSuite", "Nikto"],
+    "Methodologies": ["Version Control", "Agile", "Scrum"],
+    "Soft Skills": [
+      "Problem Solving",
+      "Team Collaboration",
+      "Clear Communication",
+      "Detailing"
+    ]
   },
   "experience": [
     {
-      "title": "Quality Assurance Analyst",
+      "title": "Quality Assurance Engineer",
       "company": "Avidus Interactive",
+      "duration": "Jan 2025 - Present",
       "responsibilities": [
-        "Develop and maintain automated test scripts using Selenium WebDriver and Java, ensuring reliable functional and regression testing.",
-        "Integrate automation into CI/CD (Jenkins, Git) and collaborate with teams to improve test coverage, early defect detection, and release quality."
+        "Tested 8+ scalable web applications using Cypress, Selenium, Postman, and Rest Assured with 40% defect reduction.",
+        "Automated API and UI tests, integrated with CI/CD pipelines reducing testing time by 50% and ensuring 99% release quality.",
+        "Collaborated in Agile teams using Jira, resolved 100+ production issues."
       ]
     }
   ],
   "projects": {
-    "url": "https://code-with-leo.vercel.app",
     "list": [
       {
-        "name": "Resol Pro",
-        "tech": "Manual Testing • JMeter • Rest Assured • Google Workspace",
+        "name": "Resolution Pro",
+        "tech": "Selenium • Cucumber • Soap UI • Load Runner • Google Workspace",
         "features": [
-          "End To End testing of task management app with 15 time of regress"
+          "Complete automation testing with high regression test on daily builds.",
+          "Rapid API testing with detailed test reports and bug logging before releases.",
+          "Working with developer to solver the performace issue using Grafana."
         ]
       },
       {
-        "name": "RR Crop",
-        "tech": "Selenium • Caffetest • Soap UI • ZOHO Workspace",
+        "name": "PISL Infra",
+        "tech": "Playwright • Cucumber • Rest Assured • Grafana • ZOHO Workspace",
         "features": [
-          "Automation testing on a employee management just with vibe coding"
+          "Complete automation and manual testing of web application and APIs.",
+          "Performance testing using Grafana and JMeter to identify and resolve bottlenecks.",
+          "Collaborated with cross-functional teams to ensure quality and timely delivery of features."
         ]
       }
     ]
   },
   "education": [
     {
-      "degree": "Bachelor of Science - In Physics - Utkal University",
-      "duration": "Graduated: 2024 July"
+      "degree": "Bachelor of Computer Application",
+      "institution": "Utkal University",
+      "duration": "Graduated: July 2024"
     },
     {
-      "degree": "SDET Course - MASAI Institute",
-      "duration": "Graduated: 2025 January"
-    },
-    {
-      "degree": "Full Stack Web Development - Udemy",
-      "duration": "Completed: 2024"
+      "degree": "Quality Assurance Engineering Course",
+      "institution": "MASAI",
+      "duration": "Graduated: January 2025"
     }
   ],
   "philosophy": [
-    "I follow a simple cycle — work, fitness, and proper rest — keeping me consistent, reliable, and always performing at my best as a QA Automation Engineer."
+    "I maintain consistent high performance through a disciplined balance of focused work, continuous learning, fitness, and rest as a Quality Assurance Engineer."
   ]
 }

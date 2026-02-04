@@ -369,6 +369,11 @@
         text-decoration: underline;
       }
 
+      .institution {
+        font-size: 13px;
+        color: var(--color-primary);
+      }
+
       svg {
         width: 16px;
         height: 16px;
@@ -620,9 +625,6 @@
               (exp) => `
             <div class="content-block">
               <div class="job-header">
-                <svg viewBox="0 0 24 24" class="job-icon">
-                  <path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z" />
-                </svg>
                 <div class="job-info">
                   <span class="job-title">${exp.title}</span>
                   <span class="separator">•</span>
@@ -668,6 +670,7 @@
             <div class="education-item">
               <div class="degree">${edu.degree}</div>
               <div class="duration">${edu.duration}</div>
+              <div class="institution">${edu.institution}</div>
             </div>
           `,
             )
@@ -675,7 +678,7 @@
 
           const philosophyList = document.getElementById("philosophy-list");
           philosophyList.innerHTML = data.philosophy
-            .map((item) => `<li>${item}</li>`)
+            .map((item) => `<p>${item}</p>`)
             .join("");
         } catch (error) {
           console.error("Error loading resume data:", error);
@@ -686,7 +689,28 @@
 
       async function downloadPDF() {
         const button = document.querySelector(".download-btn");
-        button.textContent = "Generating PDF...";
+        button.innerHTML = `
+  <svg width="20" height="20" viewBox="0 0 50 50" aria-label="Loading">
+    <circle
+      cx="25"
+      cy="25"
+      r="20"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="5"
+      stroke-linecap="round"
+      stroke-dasharray="31.4 31.4">
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        from="0 25 25"
+        to="360 25 25"
+        dur="1s"
+        repeatCount="indefinite" />
+    </circle>
+  </svg>
+`;
+
         button.disabled = true;
 
         try {
